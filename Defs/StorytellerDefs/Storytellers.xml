@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+  <StorytellerDef>
+	<defName>CassandraWakeup</defName>
+    <label>Cassandra on Wakeup</label>
+    <description>A lot like Cassandra Classic but with more events and less time to relax.</description>
+    <portraitLarge>Cassandra</portraitLarge>
+    <portraitTiny>CassandraTiny</portraitTiny>
+    <listOrder>50</listOrder>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>18</desiredPopulationCritical>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>4</minDaysPassed>
+        <mtbDaysThreatSmall>2.30</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>0.90</mtbDaysThreatBig>
+        <threatOffDays>4.2</threatOffDays>
+        <threatOnDays>3.6</threatOnDays>
+        <minDaysBetweenThreatBigs>0.9</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>4</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>1.00</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>4</minDaysPassed>
+        <baseMtb>5</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>12.5</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>4</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>CaravanTarget</category>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+
+</StorytellerDefs>
